@@ -99,8 +99,43 @@ public class Main {
     } else {
         System.out.println("В массиве нет одного из элементов");
    }
+        System.out.println();
+        System.out.println("Про конфеты");
+
+        //Про конфеты
+        Sweet candy = new Sweet();
+        candy.setName("candy");
+        candy.setWeight(2);
+        candy.setPrice(10);
+        candy.setId(1);
+
+        Sweet jellyBean = new Sweet();
+        jellyBean.setName("jellyBean");
+        jellyBean.setWeight(4);
+        jellyBean.setPrice(20);
+        jellyBean.setId(2);
+
+        Sweet brownie = new Sweet();
+        brownie.setName("brownie");
+        brownie.setWeight(8);
+        brownie.setPrice(40);
+        brownie.setId(3);
+
+        Gift gift = new Gift();
+
+        gift.addSweet(candy);
+        gift.addSweet(jellyBean);
+        gift.addSweet(brownie);
+
+        gift.countPrice();
+        gift.countweight();
+        gift.showContent();
+
 
 
  }
+
+
+
 
     }
