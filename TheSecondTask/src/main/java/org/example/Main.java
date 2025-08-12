@@ -62,11 +62,11 @@ scanner.close();
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.print("Первое число:");
+            System.out.print("Первое число: ");
             double a = scanner.nextDouble();
-            System.out.print("Второе число:");
+            System.out.print("Второе число: ");
             double b = scanner.nextDouble();
-            System.out.print("Результат сложения:");
+            System.out.print("Результат сложения: ");
             System.out.printf("%.4f",a + b);
         }  catch (InputMismatchException e) {
             System.out.println("Неверный ввод");
@@ -83,11 +83,11 @@ scanner.close();
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.print("Первое число:");
+            System.out.print("Первое число: ");
             double a = scanner.nextDouble();
-            System.out.print("Второе число:");
+            System.out.print("Второе число: ");
             double b = scanner.nextDouble();
-            System.out.print("Результат вычитания:");
+            System.out.print("Результат вычитания: ");
             System.out.printf("%.4f",a - b);
         }  catch (InputMismatchException e) {
             System.out.println("Неверный ввод");
@@ -104,11 +104,11 @@ scanner.close();
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.print("Первое число:");
+            System.out.print("Первое число: ");
             double a = scanner.nextDouble();
-            System.out.print("Второе число:");
+            System.out.print("Второе число: ");
             double b = scanner.nextDouble();
-            System.out.print("Результат умножения:");
+            System.out.print("Результат умножения: ");
             System.out.printf("%.4f",a * b);
         }  catch (InputMismatchException e) {
             System.out.println("Неверный ввод");
@@ -125,16 +125,16 @@ scanner.close();
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.print("Первое число:");
+            System.out.print("Первое число: ");
             double a = scanner.nextDouble();
-            System.out.print("Второе число:");
+            System.out.print("Второе число: ");
             double b = scanner.nextDouble();
 
             if( b == 0){
                 System.out.println("Деление на ноль");
 
             } else {
-                System.out.print("Результат деления:");
+                System.out.print("Результат деления: ");
                 System.out.printf("%.4f", a / b);
             }
         }  catch (InputMismatchException e) {
@@ -152,14 +152,16 @@ scanner.close();
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.print("Введите длину массива:");
+            System.out.print("Введите длину массива: ");
             int length = scanner.nextInt();
             if (length > 0) {
 
           String[] pureArray = new String[length];
           int[] lenghtes = new int[length];
           int max = -1;
+                System.out.println("Введите элементы");
 for (int i = 0; i <= length - 1; i++){
+    System.out.print( i + 1 + " элемент:");
     pureArray[i] = scanner.next();
     if (pureArray[i].length() > max) {
        max = pureArray[i].length();
