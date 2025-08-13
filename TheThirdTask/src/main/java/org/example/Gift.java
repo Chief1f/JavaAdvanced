@@ -11,7 +11,7 @@ public class Gift {
         sweets.add(sweet);
     }
 
-    public void countweight() {
+    public void showWeight() {
         double totalWeight = 0;
         for (int i = 0; i < sweets.size(); i++ ){
             totalWeight = sweets.get(i).getWeight() + totalWeight;
@@ -19,7 +19,7 @@ public class Gift {
         System.out.println("Общий вес подарка: "+ totalWeight);
     }
 
-    public void countPrice() {
+    public void showPrice() {
         double totalPrice = 0;
         for (int i = 0; i < sweets.size(); i++ ){
             totalPrice = sweets.get(i).getPrice() + totalPrice;
