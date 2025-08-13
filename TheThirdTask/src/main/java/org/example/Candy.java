@@ -2,16 +2,17 @@ package org.example;
 
 public class Candy extends Sweet{
 
+    private String taste;
 
-    final String TASTE = "chocolateTaste" ;
 
-    public Candy(String name,double weight,double price ){
+    public Candy(String name,double weight,double price, String taste ){
 
         super(name,weight,price );
+        this.taste = taste;
     }
 
-    public void showParameters() {
-        System.out.println( "Наименование: " + name + " " + "Вес: " + weight + " " + "Цена: " + price + " " + "Вкус: " + TASTE);
+    public String showParameters() {
+        return super.showParameters() + " " + "Вкус: " + taste;
     }
 
 }

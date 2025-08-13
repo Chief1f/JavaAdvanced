@@ -1,10 +1,10 @@
 package org.example;
 
-public class Sweet {
+public abstract class Sweet {
 
-   protected String name;
-   protected double weight;
-   protected double price;
+   private String name;
+   private double weight;
+   private double price;
 
 
     public Sweet(String name,double weight,double price ){
@@ -13,9 +13,12 @@ public class Sweet {
         this.name = name;
     }
 
-    public void showParameters() {
-        System.out.println( "Наименование: " + name + " " + "Вес: " + weight + " " +"Цена: " + price);
+    public String showParameters() {
+
+        return "Наименование: " + name + " " + "Вес: " + weight + " " +"Цена: " + price;
     }
+
+
 
     public String getName() {
         return name;

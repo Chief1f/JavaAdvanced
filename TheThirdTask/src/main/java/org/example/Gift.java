@@ -30,7 +30,7 @@ public class Gift {
     public void showContent() {
         System.out.println("Состав подарка: ");
         for (int i = 0; i < sweets.size(); i++ ){
-            sweets.get(i).showParameters();
+            System.out.println(sweets.get(i).showParameters());
         }
 
     }

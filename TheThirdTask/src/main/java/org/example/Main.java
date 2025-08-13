@@ -106,16 +106,16 @@ public class Main {
 
         Gift gift = new Gift();
 
-        gift.addSweet(new Candy("candy",2, 5));
-        gift.addSweet(new JellyBean("jellyBean",30, 15));
-        gift.addSweet(new Brownie("brownie",7, 9));
+        gift.addSweet(new Candy("candy",2, 5, "chocolate"));
+        gift.addSweet(new JellyBean("jellyBean",30, 15, "raspberry"));
+        gift.addSweet(new Brownie("brownie",7, 9, "brown"));
 
 
         gift.showPrice();
         gift.showWeight();
         gift.showContent();
 
-       
+
 
  }
 

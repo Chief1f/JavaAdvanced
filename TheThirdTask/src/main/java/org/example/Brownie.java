@@ -2,16 +2,17 @@ package org.example;
 
 public class Brownie extends Sweet{
 
+    private String colour;
 
-    final String COLOUR = "yellowColour" ;
 
-    public Brownie(String name,double weight,double price){
+    public Brownie(String name,double weight,double price, String colour){
 
         super(name,weight,price );
+        this.colour = colour;
     }
 
-    public void showParameters() {
-        System.out.println( "Наименование: " + name + " " + "Вес: " + weight + " " +"Цена: " + price + " " + "Цвет: " + COLOUR);
+    public String showParameters() {
+        return super.showParameters() +  " " + "Цвет: " + colour;
     }
 
 }
