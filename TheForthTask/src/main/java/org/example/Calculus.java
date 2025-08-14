@@ -13,7 +13,7 @@ public class Calculus {
          this.operation = operation;
      }
 
-     public void showTheResult(){
+     public void showTheResult() throws DivisionByZero {
          switch (operation) {
              case ("+"):
                  System.out.println("Результат сложения: " + Addition.calc(a,b) );

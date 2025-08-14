@@ -12,19 +12,15 @@ public class Main {
             double a = scanner.nextDouble();
             System.out.print("Второе число: ");
             double b = scanner.nextDouble();
-            if (b == 0) {
-                System.out.println("Деление на ноль");
-            } else {
-                System.out.print("Операция(+ - * /): ");
-                String operation = scanner.next();
-                Calculus calculus = new Calculus(a, b, operation);
-                System.out.print("Результат: ");
-                calculus.showTheResult();
-            }
-            } catch(InputMismatchException e){
+            System.out.print("Операция(+ - * /): ");
+            String operation = scanner.next();
+            Calculus calculus = new Calculus(a, b, operation);
+            System.out.print("Результат: ");
+            calculus.showTheResult();
+            } catch(InputMismatchException | DivisionByZero e){
                 System.out.println("Неверный ввод");
             }
-        
+
         scanner.close();
 
     }
