@@ -7,4 +7,9 @@ public class DivisionByZero extends Exception {
     public DivisionByZero(double b) {
         this.b = b;
     }
+
+    @Override
+    public String getMessage() {
+        return "Деление на ноль";
+    }
 }

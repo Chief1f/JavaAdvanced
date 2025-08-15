@@ -25,7 +25,8 @@ public class Calculus {
                  System.out.println("Результат умножения: " + Multiplication.calc(a,b) );
                  break;
              case ("/"):
-                 System.out.println("Результат деления: " + Division.calc(a,b) );
+                 System.out.println("Результат деления: " + Division.
+                         calc(a,b) );
                  break;
              default:
                  System.out.println("Неверный ввод операции");
